@@ -2,7 +2,11 @@
 /*global window, document, $ */
 
 $(function () {
-    'use strict';
+    //'use strict';
+
+    $('.modal').modalResponsiveFix({ debug: true })
+    $('.modal').touchScroll();
+
     // Load images via flickr for demonstration purposes:
     $.ajax({
         url: 'http://api.flickr.com/services/rest/',
