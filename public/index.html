@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<meta charset="utf-8">
+<title>artXang</title>
+<meta name="description" content="Angela de Fortier Smit portfolio">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<!--[if lt IE 7]><link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap-ie6.min.css"><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" data-toggle="modal" href="#modalSite">artXang</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Portfolio</a></li>
+                        <li><a data-toggle="modal" href="#modalAbout">About</a></li>
+                        <li><a data-toggle="modal" href="#modalContact">Contact</a></li>
+                        <li><a data-toggle="modal" href="#modalCopyright">&copy; 2013 artXang</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <header>
+            <h1>Portfolio</h1>
+            <blockquote>
+                <p>art by angie</p>
+            </blockquote>
+        </header>
+        <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery"></div>
+        <br>
+    </div>
+    <!-- modal-gallery is the modal dialog used for the image gallery -->
+    <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h3 class="modal-title"></h3>
+        </div>
+        <div class="modal-body"><div class="modal-image"></div></div>
+        <!--div class="modal-footer">
+            <a class="btn modal-download" target="_blank">
+                <i class="icon-download"></i>
+                <span>Download</span>
+            </a>
+            <a class="btn btn-info modal-prev">
+                <i class="icon-arrow-left icon-white"></i>
+                <span>Previous</span>
+            </a>
+            <a class="btn btn-primary modal-next">
+                <span>Next</span>
+                <i class="icon-arrow-right icon-white"></i>
+            </a>
+        </div-->
+    </div>
+    <!-- Site -->
+    <div id="modalSite" class="modal hide fade" tabindex="-1" role="dialog">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Acknowledgements</h3>
+      </div>
+      <div class="modal-body">
+        <p>
+            This site is based on <a href="http://blueimp.github.com/Bootstrap-Image-Gallery" target="_blank">Bootstrap Image Gallery</a> by Sebastion Tschan.<br>
+            Coded by <a href="mailto:freevryheid@gmail.com">freevryheid</a>.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="modalAbout" class="modal hide fade" tabindex="-1" role="dialog">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>About this Portfolio</h3>
+      </div>
+      <div class="modal-body">
+        <p>Angela Smit ...</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="modalContact" class="modal hide fade" tabindex="-1" role="dialog">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Contact Information</h3>
+      </div>
+      <div class="modal-body">
+        <address>
+            <strong>Angela de Fortier Smit</strong><br>
+            Austin, TX<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+            <abbr title="Email">E:</abbr> tehluv@gmail.com
+        </address>
+        <!--p>Contact ...</p-->
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div id="modalCopyright" class="modal hide fade" tabindex="-1" role="dialog">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Copyright Information</h3>
+      </div>
+      <div class="modal-body">
+        <p>All works shown on this web page are copyright ...</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/load-image.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
